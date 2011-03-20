@@ -9,4 +9,13 @@
 function bcd_centers_install() {
   variable_set('gmap_node_markers_center', 'small yellow');
   variable_set('pathauto_node_center_pattern', 'center/[title-raw]');
+  variable_set('content_extra_weights_center', array(
+    'title' => '-5',
+    'revision_information' => '1',
+    'author' => '3',
+    'options' => '4',
+    'menu' => '0',
+    'path' => '2',
+    'locations' => '-4',
+  ));
 }
