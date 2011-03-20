@@ -11,10 +11,12 @@ function bcd_centers_strongarm() {
   $strongarm->name = 'content_extra_weights_center';
   $strongarm->value = array(
     'title' => '-5',
-    'revision_information' => '5',
-    'menu' => '4',
-    'path' => '6',
-    'locations' => '-3',
+    'revision_information' => '1',
+    'author' => '3',
+    'options' => '4',
+    'menu' => '0',
+    'path' => '2',
+    'locations' => '-4',
   );
 
   $export['content_extra_weights_center'] = $strongarm;
@@ -43,7 +45,7 @@ function bcd_centers_strongarm() {
       'add' => '1',
     ),
     'form' => array(
-      'weight' => 0,
+      'weight' => '-4',
       'collapsible' => 0,
       'collapsed' => 0,
       'fields' => array(
@@ -89,7 +91,7 @@ function bcd_centers_strongarm() {
       ),
     ),
     'display' => array(
-      'weight' => 0,
+      'weight' => '-4',
       'hide' => array(
         'name' => 0,
         'street' => 0,
@@ -123,12 +125,5 @@ function bcd_centers_strongarm() {
   );
 
   $export['node_options_center'] = $strongarm;
-  $strongarm = new stdClass;
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_center_pattern';
-  $strongarm->value = 'center/[title-raw]';
-
-  $export['pathauto_node_center_pattern'] = $strongarm;
   return $export;
 }

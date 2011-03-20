@@ -62,10 +62,80 @@ function bcd_centers_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Location Code',
-      'weight' => '-4',
+      'weight' => '-3',
       'description' => '',
       'type' => 'text_textfield',
       'module' => 'text',
+    ),
+  );
+
+  // Exported field: field_localities_served
+  $fields['center-field_localities_served'] = array(
+    'field_name' => 'field_localities_served',
+    'type_name' => 'center',
+    'display_settings' => array(
+      'label' => array(
+        'format' => 'above',
+        'exclude' => 0,
+      ),
+      'teaser' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '4' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '2' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      '3' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+      'token' => array(
+        'format' => 'default',
+        'exclude' => 0,
+      ),
+    ),
+    'widget_active' => '1',
+    'type' => 'nodereference',
+    'required' => '0',
+    'multiple' => '1',
+    'module' => 'nodereference',
+    'active' => '1',
+    'referenceable_types' => array(
+      'loc' => 'loc',
+      'facility' => 0,
+      'center' => 0,
+      'page' => 0,
+      'quote_image' => 0,
+      'seasonal' => 0,
+      'state' => 0,
+      'temple' => 0,
+    ),
+    'advanced_view' => '--',
+    'advanced_view_args' => '',
+    'widget' => array(
+      'autocomplete_match' => 'contains',
+      'size' => '60',
+      'default_value' => array(
+        '0' => array(
+          'nid' => NULL,
+          '_error_element' => 'default_value_widget][field_localities_served][0][nid][nid',
+        ),
+      ),
+      'default_value_php' => NULL,
+      'label' => 'Localities Served',
+      'weight' => '-2',
+      'description' => '',
+      'type' => 'nodereference_autocomplete',
+      'module' => 'nodereference',
     ),
   );
 
@@ -132,7 +202,7 @@ function bcd_centers_content_default_fields() {
       ),
       'default_value_php' => NULL,
       'label' => 'Web Page',
-      'weight' => '-2',
+      'weight' => '-1',
       'description' => '',
       'type' => 'link',
       'module' => 'link',
@@ -141,6 +211,7 @@ function bcd_centers_content_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Localities Served');
   t('Location Code');
   t('Web Page');
 
