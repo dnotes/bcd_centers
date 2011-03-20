@@ -1,0 +1,12 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ *
+ */
+
+function bcd_centers_install() {
+  variable_set('gmap_node_markers_center', 'small yellow');
+  variable_set('pathauto_node_center_pattern', 'center/[title-raw]');
+}
